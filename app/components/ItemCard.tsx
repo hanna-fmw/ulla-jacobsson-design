@@ -18,11 +18,12 @@ const ItemCard = ({ item }: ItemProps) => {
 			<div className='mt-8'>
 				<div className='relative'>
 					<Image
-						src='/images/linen_shirt.jpg'
+						// src='/images/linen_shirt.jpg'
+						src={`/images/${item.image}`}
 						alt='Post Image'
 						width={250}
 						height={200}
-						className='object-cover w-[90vw] h-[30vh] md:w-[35vw] sm:h-[55vh] md:h-[35vh] lg:w-[20vw] lg:h-[50vh] rounded-md'
+						className='object-cover w-[90vw] h-[30vh] md:w-[35vw] sm:h-[55vh] md:h-[35vh] lg:w-[15vw] lg:h-[40vh] rounded-md'
 					/>
 				</div>
 				<div className='mt-3'>

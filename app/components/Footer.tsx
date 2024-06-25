@@ -25,7 +25,6 @@ const Footer = () => {
 						<h2 className='text-[14px] mb-2 md:text-2xl'>Sociala Medier</h2>
 						<div className='flex flex-col gap-2'>
 							<Link href='/'>Facebook</Link>
-							<Link href='/'>Twitter</Link>
 							<Link href='/'>Instagram</Link>
 						</div>
 					</div>
@@ -33,9 +32,6 @@ const Footer = () => {
 				<section className='w-[90vw] gap-6 flex justify-center sm:hidden'>
 					<Link href='/'>
 						<SlSocialFacebook size={15} color='#333' fill='#333' />
-					</Link>
-					<Link href='/' className='hover:font-bold'>
-						<SlSocialTwitter size={15} color='#333' fill='#333' />
 					</Link>
 					<Link
 						href='/'

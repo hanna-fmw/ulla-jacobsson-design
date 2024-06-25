@@ -11,7 +11,8 @@ const config: Config = {
 			colors: {
 				'color-primary': '#E5E5E5',
 				'hero-content-color': '#e5e5e5',
-				'hero-title-color': '#9E4CD9',
+				// 'hero-title-color-purple': '#BA9AB8',
+				'hero-title-color-pink': '#C47C90',
 				'navbar-link-color': '#e5e5e5',
 				'navbar-link-hover-color': '#f5f5f5',
 				'tag-color': '#e5e5e5',
@@ -19,9 +20,8 @@ const config: Config = {
 				'quote-color': '#D4A373',
 				'horizontal-line-color': '#E5E5E5',
 			},
-			backgroundImage: {
-				// 'hero-bg': "url('../public/images/hero-fabric.jpg')",
-				'hero-bg': "url('../public/images/clothes.jpg')",
+			backgroundImage: {				
+				'hero-bg': "url('../public/images/rosa-hero.png')",
 			},
 			fontFamily: {
 				roboto: ['var(--font-roboto)', 'sans-serif'],

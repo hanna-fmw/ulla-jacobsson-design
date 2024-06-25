@@ -22,7 +22,7 @@ const ItemCard = ({ item }: ItemProps) => {
 						alt='Post Image'
 						width={250}
 						height={200}
-						className='object-cover w-[90vw] h-[40vh] md:w-[35vw] md:h-[35vh] lg:w-[20vw] lg:h-[50vh] rounded-md'
+						className='object-cover w-[90vw] h-[30vh] md:w-[35vw] sm:h-[55vh] md:h-[35vh] lg:w-[20vw] lg:h-[50vh] rounded-md'
 					/>
 				</div>
 				<div className='mt-3'>
@@ -31,7 +31,7 @@ const ItemCard = ({ item }: ItemProps) => {
 					<div className='text-base md:text-lg'>{item.price}</div>
 				</div>
 			</div>
-		</section>		
+		</section>
 	)
 }
 

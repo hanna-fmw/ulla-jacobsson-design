@@ -31,7 +31,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${roboto.variable} ${lora.variable} ${leage_spartan.variable}`}>
+			<body
+				className={`${roboto.variable} ${lora.variable} ${leage_spartan.variable}`}>
 				{children}
 				<Footer />
 			</body>

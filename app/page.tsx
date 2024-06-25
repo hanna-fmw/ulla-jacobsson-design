@@ -18,7 +18,7 @@ type Item = {
 const Home = () => {
 	return (
 		<main>
-			<section className='w-screen min-w-full h-[65vh] md:h-[80vh] overflow-hidden bg-hero-bg bg-center object-cover relative'>
+			<section className='w-screen min-w-full h-[65vh] sm:h-[80vh] md:h-[80vh] overflow-hidden bg-hero-bg bg-center object-cover relative'>
 				<Navbar />
 
 				<HeroContent

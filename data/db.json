@@ -3,42 +3,42 @@
 		"id": 1,
 		"model_name": "Vera",
 		"short_description": "Skön tröja i återvunnen bomull, idealisk för vardagsbruk.",
-		"image": "https://source.unsplash.com/user/campaign/1600x900",
+		"image": "bjorne.jpg",
 		"price": "SEK 350"
 	},
 	{
 		"id": 2,
 		"model_name": "Ella",
 		"short_description": "Lätta linnebyxor, perfekta för sommaren, tillverkade i ekologiskt material.",
-		"image": "https://source.unsplash.com/user/campaign/1601x900",
+		"image": "colored_circles.jpg",
 		"price": "SEK 450"
 	},
 	{
 		"id": 3,
 		"model_name": "Saga",
 		"short_description": "Avslappnad passform i återanvänd polyester, hållbar design.",
-		"image": "https://source.unsplash.com/user/campaign/1602x900",
+		"image": "marimekko.jpg",
 		"price": "SEK 500"
 	},
 	{
 		"id": 4,
 		"model_name": "Mia",
 		"short_description": "Stickad tröja i 100% organisk bomull, både mjuk och varm.",
-		"image": "https://source.unsplash.com/user/campaign/1603x900",
+		"image": "raven.jpg",
 		"price": "SEK 600"
 	},
 	{
 		"id": 5,
 		"model_name": "Tyra",
 		"short_description": "Denim jeans gjorda av återvunnen denim, klassisk och bekväm.",
-		"image": "https://source.unsplash.com/user/campaign/1604x900",
+		"image": "red_tulips.jpg",
 		"price": "SEK 550"
 	},
 	{
 		"id": 6,
 		"model_name": "Lisa",
 		"short_description": "Elegant silkesklänning, perfekt för speciella tillfällen, tillverkad i hållbart framtaget material.",
-		"image": "https://source.unsplash.com/user/campaign/1605x900",
+		"image": "roses.jpg",
 		"price": "SEK 800"
 	}
 ]

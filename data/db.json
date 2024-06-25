@@ -40,5 +40,19 @@
 		"short_description": "Elegant silkesklänning, perfekt för speciella tillfällen, tillverkad i hållbart framtaget material.",
 		"image": "roses.jpg",
 		"price": "SEK 800"
+	},
+	{
+		"id": 7,
+		"model_name": "Anna",
+		"short_description": "Mysig stickad tröja, tillverkad av ekologisk ull, perfekt för kyliga dagar.",
+		"image": "beige_shirt.jpg",
+		"price": "SEK 600"
+	},
+	{
+		"id": 8,
+		"model_name": "Emma",
+		"short_description": "Snygga jeans med hög midja, gjorda av återvunnen denim, bekväma och hållbara.",
+		"image": "vest.JPEG",
+		"price": "SEK 700"
 	}
 ]

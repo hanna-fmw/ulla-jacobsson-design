@@ -1,10 +1,10 @@
 import HeroContent from './components/HeroContent'
 import ItemCard from './components/ItemCard'
 import items from '@/data/db.json'
-import Navbar from './components/Navbar'
+
 import Link from 'next/link'
 import Image from 'next/image'
-import logoTulip from '../public/logo-tulip.png'
+import logo from '../public/logo.png'
 
 type Item = {
 	id: number
@@ -58,11 +58,8 @@ const Home = () => {
 				</p>
 
 				<p className='text-base md:text-xl mb-6'>Varmt välkommen att kontakta mig!</p>
-				<div className='flex items-center mt-12'>
-					{/* <div className='w-6 h-6'> */}
-					<div className='w-32 h-32 rounded-full overflow-hidden'>
-						<Image src={logoTulip} alt='logo' width={65} height={65} />
-					</div>
+				<div className='flex items-center mt-12 gap-14 md:mt-14'>
+					<Image src={logo} alt='logo' width={65} height={65} />
 					<div className='flex flex-col text-base md:text-xl'>
 						<span>Ulla Jacobsson</span>
 						<span className='cursor-pointer text-hero-title-color-pink hover:font-semibold'>
@@ -72,7 +69,7 @@ const Home = () => {
 				</div>
 			</section>
 			<section className='bg-navbar-link-hover-color w-screen md:py-20 mt-14 md:mt-16 px-[20px] md:px-[70px] lg:px-[200px]'>
-				<div className='pt-12 md:pt-0 md:pl-[24px]'>
+				<div className='pt-12 md:pt-0'>
 					<h2>Ett axplock</h2>
 				</div>
 				<div className='pb-5 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>

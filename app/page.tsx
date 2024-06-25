@@ -4,8 +4,7 @@ import items from '@/data/db.json'
 import Navbar from './components/Navbar'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../public/logo.png'
-import rosa from '../public/images/rosa.jpg'
+import logoTulip from '../public/logo-tulip.png'
 
 type Item = {
 	id: number
@@ -18,9 +17,8 @@ type Item = {
 const Home = () => {
 	return (
 		<main>
-			<section className='w-screen min-w-full h-[65vh] sm:h-[80vh] md:h-[80vh] overflow-hidden bg-hero-bg bg-center object-cover relative'>
-				<Navbar />
-
+			<section className='mx-auto my-28 bg-navbar-link-hover-color rounded-[5px] w-[80vw] h-[65vh] sm:h-[80vh] md:w-[70vw] md:h-[60vh] overflow-hidden relative'>
+				<Image src='/images/rosa-hero.png' width={300} height={250} alt='hero image' />
 				<HeroContent
 					postTitle='Hållbart mode för alla'
 					subheading='Skapat med passion och omsorg i hjärtat av vackra Hälsingland, där varje plagg berättar en historia.'
@@ -49,21 +47,27 @@ const Home = () => {
 
 				<p className='text-base md:text-xl'>
 					Du hittar också mina kläder i fysiska butiker &ndash; i{' '}
-					<Link href='https://example.com/stenegard'>Gårdsbutiken</Link> på Stenegård i Järvsö och i{' '}
-					<Link href='https://example.com/tidlos'>Butik Tidlös</Link> i Vattlånga. Besök gärna deras
-					webbplatser för mer information om öppettider och mer.
+					<Link href='https://example.com/stenegard'>
+						<span className='text-hero-title-color-pink hover:font-semibold'>Gårdsbutiken</span>
+					</Link>{' '}
+					på Stenegård i Järvsö och i{' '}
+					<Link href='https://example.com/tidlos'>
+						<span className='text-hero-title-color-pink hover:font-semibold'>Butik Tidlös</span>
+					</Link>{' '}
+					i Vattlånga. Besök gärna deras webbplatser för mer information om öppettider och mer.
 				</p>
 
 				<p className='text-base md:text-xl mb-6'>Varmt välkommen att kontakta mig!</p>
-				<div className='flex items-center gap-5 mt-12'>
+				<div className='flex items-center mt-12'>
 					{/* <div className='w-6 h-6'> */}
 					<div className='w-32 h-32 rounded-full overflow-hidden'>
-						{/* <Image src={logo} alt='logo' width={40} height={5} /> */}
-						<Image src={rosa} alt='logo' width={140} height={140} />
+						<Image src={logoTulip} alt='logo' width={65} height={65} />
 					</div>
 					<div className='flex flex-col text-base md:text-xl'>
 						<span>Ulla Jacobsson</span>
-						<span>ulla@ullajacobssondesign.se</span>
+						<span className='cursor-pointer text-hero-title-color-pink hover:font-semibold'>
+							ulla@ullajacobssondesign.se
+						</span>
 					</div>
 				</div>
 			</section>
@@ -71,7 +75,7 @@ const Home = () => {
 				<div className='pt-12 md:pt-0 md:pl-[24px]'>
 					<h2>Ett axplock</h2>
 				</div>
-				<div className='pb-5 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6'>
+				<div className='pb-5 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
 					{items.map((item: Item) => (
 						<ItemCard key={item.id} item={item} />
 					))}

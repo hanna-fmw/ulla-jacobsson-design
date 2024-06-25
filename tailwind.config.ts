@@ -20,7 +20,8 @@ const config: Config = {
 				'horizontal-line-color': '#E5E5E5',
 			},
 			backgroundImage: {
-				'hero-bg': "url('../public/images/hero-fabric.jpg')",
+				// 'hero-bg': "url('../public/images/hero-fabric.jpg')",
+				'hero-bg': "url('../public/images/clothes.jpg')",
 			},
 			fontFamily: {
 				roboto: ['var(--font-roboto)', 'sans-serif'],

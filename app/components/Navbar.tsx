@@ -8,40 +8,34 @@ import logo from '../../public/logo.png'
 
 const Navbar = () => {
 	return (
-		<div
-			className='w-screen flex justify-between items-center px-[20px] md:px-[70px] h-20'
-			style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-			{/* <div className='w-screen flex justify-between items-center px-[20px] md:px-[70px] h-20'> */}
+		<div className='m-8 flex justify-between items-center w-screen p-6 md:px-16 h-20 lg:px-32'>
 			<Link href='/' className='cursor-pointer font-semibold'>
-				<Image src={logo} alt='logo' width={25} height={25} />
+				<Image src={logo} alt='logo' width={100} height={100} />
 			</Link>
 
 			<nav className='flex gap-6 items-center'>
 				<Link
 					href='/'
-					className='text-sm md:text-[12px] hover:font-bold text-navbar-link-color hover:text-navbar-link-hover-color'>
+					className='text-sm md:text-[12px] hover:underline hover:underline-offset-2 hover:decoration-hero-title-color'>
 					Home
 				</Link>
 				<Link
 					href='/'
-					className='text-sm md:text-[12px] hover:font-bold text-navbar-link-color hover:text-navbar-link-hover-color'>
+					className='text-sm md:text-[12px] hover:underline hover:underline-offset-2 hover:decoration-hero-title-color'>
 					About
 				</Link>
 				<Link
 					href='/'
-					className='text-sm md:text-[12px] hover:font-bold text-navbar-link-color hover:text-navbar-link-hover-color'>
+					className='text-sm md:text-[12px] hover:underline hover:underline-offset-2 hover:decoration-hero-title-color'>
 					Contact
 				</Link>
 				<Link href='/'>
-					<SlSocialFacebook size={15} color='#e5e5e5' fill='#e5e5e5' />
-				</Link>
-				<Link href='/' className='hover:font-bold'>
-					<SlSocialTwitter size={15} color='#e5e5e5' fill='#e5e5e5' />
+					<SlSocialFacebook size={15} />
 				</Link>
 				<Link
 					href='/'
 					className='text-navbar-link-color hover:text-navbar-link-hover-color hover:font-bold'>
-					<SlSocialYoutube size={15} color='#e5e5e5' fill='#e5e5e5' />
+					<SlSocialYoutube size={15} />
 				</Link>
 			</nav>
 		</div>

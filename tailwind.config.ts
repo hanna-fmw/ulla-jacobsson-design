@@ -9,9 +9,9 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				'hero-title-color-pink': '#C47C90',
+				'accent-pink': '#C47C90',
 				'navbar-link-color': '#e5e5e5',
-				'navbar-link-hover-color': '#f5f5f5',
+				'light-gray': '#f5f5f5',
 			},
 			backgroundImage: {
 				'hero-bg': "url('../public/images/rosa-hero.png')",

@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 type ItemProps = {
 	item: {
@@ -14,25 +13,24 @@ type ItemProps = {
 
 const ItemCard = ({ item }: ItemProps) => {
 	return (
-		<section className='cursor-pointer py-2 md:py-4'>
-			<div className='mt-6'>
-				<div>
-					<Image
-						src={`/images/${item.image}`}
-						alt='Post Image'
-						width={250}
-						height={200}
-						className='object-cover object-center w-[45vw] h-[45vh] sm:object-top sm:h-[55vh] md:w-[35vw] md:h-[45vh] lg:w-[15vw] lg:h-[40vh] rounded-[3px]'
-					/>
-				</div>
-				<div className='mt-3'>
-					<h2 className='font-inter font-medium text-sm sm:text-base md:text-base uppercase'>
+		<section className='mx-auto w-[43vw] sm:w-[30vw] md:w-[25vw] lg:w-[18vw]'>
+			<div>
+				<Image
+					src={`/images/${item.image}`}
+					alt='Post Image'
+					width={250}
+					height={200}
+					className='rounded-[3px] object-cover object-center w-full h-[45vh] sm:w-full sm:h-[60vh] md:w-full md:h-[45vh] lg:w-full lg:h-[50vh]'
+				/>
+			</div>
+			<div className='mt-1 max-w-full'>
+				<div className='flex justify-between'>
+					<p className='font-inter mb-1 text-[0.6rem] lg:text-xs font-normal uppercase'>
 						{item.model_name}
-					</h2>
-
-					<div className='text-base md:text-lg'>{item.short_description}</div>
-					<div className='text-base md:text-lg'>{item.price}</div>
+					</p>
+					<p className='text-[0.6rem] lg:text-xs'>{item.price}</p>
 				</div>
+				<p className='text-[0.6rem] lg:text-xs'>{item.short_description}</p>
 			</div>
 		</section>
 	)

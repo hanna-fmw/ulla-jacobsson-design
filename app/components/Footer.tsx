@@ -6,58 +6,67 @@ import { CiMail } from 'react-icons/ci'
 
 const Footer = () => {
 	return (
-		<footer className='text-lg mx-auto py-10 w-[90vw] md:w-screen'>
+		<footer className='mx-auto py-10 w-[90vw] md:w-screen'>
 			<>
-				<section className='w-full py-10 grid grid-cols-2 sm:grid-cols-3'>
+				<section className='w-full md:py-10 grid grid-cols-2 sm:grid-cols-3'>
 					<div className='mx-auto'>
-						<h2 className='font-inter text-sm sm:text-base md:text-lg font-semibold uppercase tracking-[1px]'>
+						<h3 className='font-inter text-[0.6rem] font-normal lg:text-xs uppercase tracking-[1px]'>
 							Kontakt
-						</h2>
-						<div className='flex flex-col text-base md:text-base'>
+						</h3>
+						<div className='flex flex-col'>
 							<Link
 								href='mailto:ulla@ullajacobssondesign.se'
-								className='cursor-pointer hover:text-hero-title-color-pink'>
+								className='cursor-pointer text-[0.6rem] md:text-xs hover:text-accent-pink'>
 								ulla@ullajacobssondesign.se
 							</Link>
-							<div>+46&nbsp;(0)&nbsp;70-300&nbsp;13&nbsp;90</div>
+							<p className='md:text-xs'>+46&nbsp;(0)&nbsp;70-300&nbsp;13&nbsp;90</p>
 						</div>
 					</div>
 					<div className='mx-auto'>
-						<h2 className='font-inter text-sm sm:text-base md:text-lg font-semibold uppercase tracking-[1px]'>
+						<h3 className='font-inter text-[0.6rem] font-normal lg:text-xs uppercase tracking-[1px]'>
 							Fysiska butiker
-						</h2>
-						<div className='flex flex-col text-base md:text-base'>
-							<Link href='/' className='cursor-pointer hover:text-hero-title-color-pink'>
+						</h3>
+						<div className='flex flex-col'>
+							<Link
+								href='/'
+								className='cursor-pointer text-[0.6rem] lg:text-xs hover:text-accent-pink'>
 								www.gårdsbutiken.se
 							</Link>
-							<Link href='/' className='cursor-pointer hover:text-hero-title-color-pink'>
+							<Link
+								href='/'
+								className='cursor-pointer text-[0.6rem] lg:text-xs hover:text-accent-pink'>
 								www.butik-tidlos.se
 							</Link>
 						</div>
 					</div>
 					<div className='hidden sm:block sm:mx-auto'>
-						<h2 className='font-inter text-sm sm:text-base md:text-lg font-semibold uppercase tracking-[1px]'>
+						<h3 className='font-inter text-[0.6rem] font-normal lg:text-xs uppercase tracking-[1px]'>
 							Sociala Medier
-						</h2>
-						<div className='flex flex-col text-base md:text-base'>
-							<Link href='/' className='cursor-pointer hover:text-hero-title-color-pink'>
+						</h3>
+						<div className='flex flex-col'>
+							<Link
+								href='/'
+								className='cursor-pointer text-[0.6rem] md:text-xs hover:text-accent-pink'>
 								Facebook
 							</Link>
-							<Link href='/' className='cursor-pointer hover:text-hero-title-color-pink'>
+
+							<Link
+								href='/'
+								className='cursor-pointer text-[0.6rem] md:text-xs hover:text-accent-pink'>
 								Instagram
 							</Link>
 						</div>
 					</div>
 				</section>
-				<section className='w-[90vw] gap-6 flex justify-center mt-4 sm:hidden'>
-					<Link href='/' className='cursor-pointer hover:text-hero-title-color-pink'>
-						<CiFacebook size={20} color='#333' fill='#333' />
+				<section className='w-[90vw] mt-[1.5rem] gap-6 flex justify-center sm:hidden'>
+					<Link href='/' className='cursor-pointer'>
+						<CiFacebook color='#333' fill='#333' className='w-4 h-4' />
 					</Link>
-					<Link href='/' className='cursor-pointer hover:text-hero-title-color-pink'>
-						<CiInstagram size={20} color='#333' fill='#333' />
+					<Link href='/' className='cursor-pointer'>
+						<CiInstagram color='#333' fill='#333' className='w-4 h-4' />
 					</Link>
-					<Link href='/' className='cursor-pointer hover:text-hero-title-color-pink'>
-						<CiMail size={20} color='#333' fill='#333' />
+					<Link href='/' className='cursor-pointer'>
+						<CiMail color='#333' fill='#333' className='w-4 h-4' />
 					</Link>
 				</section>
 			</>

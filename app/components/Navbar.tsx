@@ -6,26 +6,22 @@ import { CiMail } from 'react-icons/ci'
 
 const Navbar = () => {
 	return (
-		<div className='py-10 mx-auto flex justify-between items-center w-[90vw] md:w-[80vw] md:px-16 lg:w-screen lg:px-32'>
+		<div className='py-8 mx-auto flex justify-between items-center w-[90vw] md:py-6 md:px-4 lg:w-screen lg:px-32'>
 			<div className='hidden sm:visible'></div>
-
-			<h2 className='font-inter text-sm sm:text-base md:text-lg font-semibold uppercase tracking-[1px] '>
+			<p className='font-inter text-[0.6rem] sm:text-xs md:font-normal uppercase tracking-[1px]'>
 				Ulla Jacobsson Design
-			</h2>
-
+			</p>
 			<nav className='flex gap-6 items-center translate-y-[-25%]'>
 				<Link href='/'>
-					<CiFacebook size={20} />
+					<CiFacebook className='w-4 h-4 md:w-5 md:h-5' />
 				</Link>
-				<Link
-					href='/'
-					className='text-navbar-link-color hover:text-navbar-link-hover-color hover:font-bold'>
-					<CiInstagram size={20} />
+				<Link href='/' className='text-navbar-link-color hover:text-light-gray hover:font-bold'>
+					<CiInstagram className='w-4 h-4 md:w-5 md:h-5' />
 				</Link>
 				<Link
 					href='mailto:ulla@ullajacobssondesign.se'
-					className='text-navbar-link-color hover:text-navbar-link-hover-color hover:font-bold'>
-					<CiMail size={20} />
+					className='text-navbar-link-color hover:text-light-gray hover:font-bold'>
+					<CiMail className='w-4 h-4 md:w-5 md:h-5' />
 				</Link>
 			</nav>
 		</div>

@@ -3,6 +3,7 @@ import { Inter, Roboto, Lora, League_Spartan } from 'next/font/google'
 import './globals.css'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-inter' })
 
@@ -31,6 +32,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
+			<Head>
+				<meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1' />
+			</Head>
 			<body
 				className={`${roboto.variable} ${lora.variable} ${leage_spartan.variable} ${inter.variable}`}>
 				<Navbar />

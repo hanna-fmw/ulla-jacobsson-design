@@ -1,10 +1,12 @@
+'use client'
+import { useState } from 'react'
 import HeroContent from './components/HeroContent'
 import ItemCard from './components/ItemCard'
 import items from '@/data/db.json'
-
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../public/logo.png'
+import Modal from './components/Modal'
+import SizeChart from './components/SizeChart'
 
 type Item = {
 	id: number
@@ -15,18 +17,34 @@ type Item = {
 }
 
 const Home = () => {
+	const [isModalOpen, setIsModalOpen] = useState(false)
+
+	const openModal = () => setIsModalOpen(true)
+	const closeModal = () => setIsModalOpen(false)
+
 	return (
 		<main>
-			<section className='mx-auto my-28 bg-navbar-link-hover-color rounded-[5px] w-[80vw] h-[65vh] sm:h-[80vh] md:w-[70vw] md:h-[60vh] overflow-hidden relative'>
-				<Image src='/images/rosa-hero.png' width={300} height={250} alt='hero image' />
+			<section className='mx-auto bg-navbar-link-hover-color pr-5 rounded-[3px] w-[100vw] h-[90vh] md:w-[100vw] md:h-[90vh] md:pr-10 overflow-hidden relative lg:w-[100vw] lg:h-[90vh]'>
+				<Image
+					src='/images/rosa-hero.png'
+					width={300}
+					height={250}
+					alt='hero image'
+					className='h-[100%] w-auto object-cover lg:h-[100%] lg:w-auto'
+				/>
+
 				<HeroContent
 					postTitle='Hållbart mode för alla'
-					subheading='Skapat med passion och omsorg i hjärtat av vackra Hälsingland, där varje plagg berättar en historia.'
+					subheading='Skapat med passion och omsorg i hjärtat av vackra Hälsingland, där varje plagg berättar en historia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Sed vulputate auctor justo.
+'
 				/>
 			</section>
 
-			<section className='mx-auto my-20 font-lora w-[80vw] md:w-[70vw] md:my-28'>
-				<h2>Om Ulla Jacobsson Design</h2>
+			<section className='mx-auto my-10 sm:my-20 w-[80vw] md:w-[70vw] md:my-28'>
+				<h2 className='font-inter text-sm sm:text-base md:text-lg font-semibold uppercase tracking-[1px] '>
+					Om Ulla Jacobsson Design
+				</h2>
+
 				<p className='text-base md:text-xl'>
 					Välkommen till mitt lilla modeuniversum! Jag har sytt kläder i många år från min
 					pittoreska ateljé i det vackra Järvsö i Hälsingland. Min passion för unika tyger och
@@ -54,25 +72,48 @@ const Home = () => {
 					<Link href='https://example.com/tidlos'>
 						<span className='text-hero-title-color-pink hover:font-semibold'>Butik Tidlös</span>
 					</Link>{' '}
-					i Vattlånga. Besök gärna deras webbplatser för mer information om öppettider och mer.
+					i Vattlång. Besök gärna deras webbplatser för mer information om öppettider och mer.
 				</p>
 
-				<p className='text-base md:text-xl mb-6'>Varmt välkommen att kontakta mig!</p>
-				<div className='flex items-center mt-12 gap-14 md:mt-14'>
-					<Image src={logo} alt='logo' width={65} height={65} />
+				<p className='text-base md:text-xl mb-2'>Varmt välkommen att kontakta mig!</p>
+				<div className='flex items-center mt-812 gap-14 md:mt-8'>
 					<div className='flex flex-col text-base md:text-xl'>
 						<span>Ulla Jacobsson</span>
 						<span className='cursor-pointer text-hero-title-color-pink hover:font-semibold'>
-							ulla@ullajacobssondesign.se
+							<a href='mailto:ulla@ullajacobssondesign.se'>ulla@ullajacobssondesign.se</a>
 						</span>
 					</div>
 				</div>
 			</section>
 			<section className='bg-navbar-link-hover-color w-screen md:py-20 mt-14 md:mt-16 px-[20px] md:px-[70px] lg:px-[200px]'>
-				<div className='pt-12 md:pt-0'>
-					<h2>Ett axplock</h2>
+				<div className='pt-10 md:pt-12'>
+					<h2 className='font-inter text-sm sm:text-base md:text-lg font-semibold uppercase tracking-[1px] '>
+						Ett axplock
+					</h2>
 				</div>
-				<div className='pb-5 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+				<div>
+					<p className='text-base md:text-xl mb-4'>
+						En måttabell för samtliga modeller finns{' '}
+						<button className='text-hero-title-color-pink hover:font-semibold' onClick={openModal}>
+							här
+						</button>
+						.
+					</p>
+
+					<Modal isOpen={isModalOpen} onClose={closeModal}>
+						<div className='flex flex-col items-center mb-6'>
+							<h2 className='font-inter text-sm sm:text-base md:text-lg font-semibold uppercase tracking-[1px] '>
+								Måttabell
+							</h2>
+							<p className='text-lg mb-4'>
+								Måtten gäller för följande modeller: Vera, Mia och Saga
+							</p>
+						</div>
+						<SizeChart />
+					</Modal>
+				</div>
+
+				<div className='pb-5 mx-auto grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4'>
 					{items.map((item: Item) => (
 						<ItemCard key={item.id} item={item} />
 					))}

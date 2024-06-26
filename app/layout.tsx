@@ -4,7 +4,7 @@ import './globals.css'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], weight: ['400', '500'], variable: '--font-inter' })
 
 const roboto = Roboto({
 	subsets: ['latin'],
@@ -31,7 +31,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${roboto.variable} ${lora.variable} ${leage_spartan.variable}`}>
+			<body
+				className={`${roboto.variable} ${lora.variable} ${leage_spartan.variable} ${inter.variable}`}>
 				<Navbar />
 				{children}
 				<Footer />

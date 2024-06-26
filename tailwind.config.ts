@@ -9,24 +9,18 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				'color-primary': '#E5E5E5',
-				'hero-content-color': '#e5e5e5',
-				// 'hero-title-color-purple': '#BA9AB8',
 				'hero-title-color-pink': '#C47C90',
 				'navbar-link-color': '#e5e5e5',
 				'navbar-link-hover-color': '#f5f5f5',
-				'tag-color': '#e5e5e5',
-				'date-color': '#6C757D',
-				'quote-color': '#D4A373',
-				'horizontal-line-color': '#E5E5E5',
 			},
-			backgroundImage: {				
+			backgroundImage: {
 				'hero-bg': "url('../public/images/rosa-hero.png')",
 			},
 			fontFamily: {
 				roboto: ['var(--font-roboto)', 'sans-serif'],
 				spartan: ['var(--font-spartan)', 'sans-serif'],
 				lora: ['var(--font-lora)', 'sans-serif'],
+				inter: ['var(--font-inter)', 'sans-serif'],
 			},
 		},
 	},

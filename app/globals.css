@@ -4,6 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+:root {
+	--primary-font-family: inter, sans-serif;
+}
+
 *,
 html,
 body {
@@ -11,19 +15,20 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
-	font-family: 'Inter', sans-serif;
 	color: #333;
+	font-family: var(--primary-font-family);
 }
 
 @layer base {
-	html {
-		font-size: 62.5%;
-	}
-
+	html,
 	body {
-		font-family: 'Roboto', sans-serif;
+		font-size: 62.5%;
+		font-family: 'Inter', serif;
 		color: #333;
 	}
+	/* h1 {
+		font-family: 'Inter', sans-serif;
+	} */
 }
 
 h1 {

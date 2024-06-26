@@ -14,20 +14,22 @@ type ItemProps = {
 
 const ItemCard = ({ item }: ItemProps) => {
 	return (
-		<section className='cursor-pointer py-4'>
-			<div className='mt-8'>
-				<div className='relative'>
+		<section className='cursor-pointer py-2 md:py-4'>
+			<div className='mt-6'>
+				<div>
 					<Image
-						// src='/images/linen_shirt.jpg'
 						src={`/images/${item.image}`}
 						alt='Post Image'
 						width={250}
 						height={200}
-						className='object-cover w-[90vw] h-[30vh] md:w-[35vw] sm:h-[55vh] md:h-[35vh] lg:w-[15vw] lg:h-[40vh] rounded-md'
+						className='object-cover object-center w-[45vw] h-[45vh] sm:object-top sm:h-[55vh] md:w-[35vw] md:h-[45vh] lg:w-[15vw] lg:h-[40vh] rounded-[3px]'
 					/>
 				</div>
 				<div className='mt-3'>
-					<div className='font-semibold text-base md:text-lg'>Modell: {item.model_name}</div>
+					<h2 className='font-inter font-medium text-sm sm:text-base md:text-base uppercase'>
+						{item.model_name}
+					</h2>
+
 					<div className='text-base md:text-lg'>{item.short_description}</div>
 					<div className='text-base md:text-lg'>{item.price}</div>
 				</div>

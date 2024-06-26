@@ -1,41 +1,31 @@
 import Link from 'next/link'
 import React from 'react'
-import { SlSocialTwitter } from 'react-icons/sl'
-import { SlSocialFacebook } from 'react-icons/sl'
-import { SlSocialYoutube } from 'react-icons/sl'
-import Image from 'next/image'
-import logo from '../../public/logo.png'
+import { CiFacebook } from 'react-icons/ci'
+import { CiInstagram } from 'react-icons/ci'
+import { CiMail } from 'react-icons/ci'
 
 const Navbar = () => {
 	return (
-		<div className='m-8 flex justify-between items-center w-screen p-6 md:px-16 h-20 lg:px-32'>
-			<Link href='/' className='cursor-pointer font-semibold'>
-				<Image src={logo} alt='logo' width={100} height={100} />
-			</Link>
+		<div className='py-10 mx-auto flex justify-between items-center w-[90vw] md:w-[80vw] md:px-16 lg:w-screen lg:px-32'>
+			<div className='hidden sm:visible'></div>
 
-			<nav className='flex gap-6 items-center'>
-				<Link
-					href='/'
-					className='text-sm md:text-[12px] hover:underline hover:underline-offset-2 hover:decoration-hero-title-color'>
-					Home
-				</Link>
-				<Link
-					href='/'
-					className='text-sm md:text-[12px] hover:underline hover:underline-offset-2 hover:decoration-hero-title-color'>
-					About
-				</Link>
-				<Link
-					href='/'
-					className='text-sm md:text-[12px] hover:underline hover:underline-offset-2 hover:decoration-hero-title-color'>
-					Contact
-				</Link>
+			<h2 className='font-inter text-sm sm:text-base md:text-lg font-semibold uppercase tracking-[1px] '>
+				Ulla Jacobsson Design
+			</h2>
+
+			<nav className='flex gap-6 items-center translate-y-[-25%]'>
 				<Link href='/'>
-					<SlSocialFacebook size={15} />
+					<CiFacebook size={20} />
 				</Link>
 				<Link
 					href='/'
 					className='text-navbar-link-color hover:text-navbar-link-hover-color hover:font-bold'>
-					<SlSocialYoutube size={15} />
+					<CiInstagram size={20} />
+				</Link>
+				<Link
+					href='mailto:ulla@ullajacobssondesign.se'
+					className='text-navbar-link-color hover:text-navbar-link-hover-color hover:font-bold'>
+					<CiMail size={20} />
 				</Link>
 			</nav>
 		</div>

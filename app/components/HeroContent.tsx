@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from 'next/image'
+import logoBgRemoved from '../../public/logo-bg-removed.png'
 
 type Props = {
 	postTitle: string
@@ -6,14 +8,15 @@ type Props = {
 }
 
 const HeroContent = ({ postTitle, subheading }: Props) => (
-	<div className='absolute bottom-[10%] right-0 w-1/2 md:bottom-[35%] md:w-1/2 lg:w-[60%] px-[20px] md:px-[70px]'>
-		<h2 className='text-base md:text-lg font-semibold uppercase tracking-[1px] '>
-			Ulla Jacobsson Design
-		</h2>
-		<h1 className='text-hero-title-color-pink font-lora overflow-hidden text-5xl sm:text-6xl md:text-6xl'>
+	<div className='flex flex-col items-center absolute h-full right-8 top-[5%] md:top-[20%] md:w-1/2 md:right-[5%] lg:w-[45%] lg:right-[15%]'>
+		<h1 className='hidden sm:block font-inter text-hero-title-color-pink overflow-hidden sm:text-4xl lg:text-5xl'>
 			{postTitle}
 		</h1>
-		<p className='font-inter text-base md:text-xl mt-3'>{subheading}</p>
+
+		<p className='hidden sm:block text-center font-inter sm:text-base lg:text-xl mt-3'>
+			{subheading}
+		</p>
+		<Image src={logoBgRemoved} alt='logo' width={120} height={120} />
 	</div>
 )
 

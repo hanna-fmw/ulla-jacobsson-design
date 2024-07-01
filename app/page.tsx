@@ -40,7 +40,7 @@ const Home = () => {
 				/>
 			</section>
 			<section className='bg-[#232323]'>
-				<div className='px-4 py-8 font-inter text-white text-[0.6rem] sm:text-xs md:font-normal uppercase tracking-[1px] md:text-right lg:w-[90vw]'>
+				<div className='px-4 py-10 font-inter text-white text-[0.6rem] sm:text-xs md:font-normal uppercase tracking-[1px] md:text-right lg:w-[90vw]'>
 					Ulla Jacobsson Design
 				</div>
 			</section>
@@ -150,7 +150,7 @@ const Home = () => {
 					</div>
 				</section>
 			</section>
-			<section className='mx-auto font-lora mt-6 mb-10 md:mt-16 md:mb-16 lg:mt-10 lg:mb-14 w-[80vw] md:w-[70vw] lg:w-[70vw] md:my-20'>
+			<section className='mx-auto font-lora mt-6 mb-10 md:mt-16 md:mb-16 lg:mt-20 lg:mb-20 w-[80vw] md:w-[70vw] lg:w-[70vw] md:my-20'>
 				<h2 className='font-lora font-medium text-base md:text-xl'>Ulla Jacobsson Kläder</h2>
 
 				<div className='md:grid md:grid-cols-2 md:gap-10 lg:gap-12'>
@@ -177,7 +177,7 @@ const Home = () => {
 					</div>
 					<div className='flex justify-between gap-2 sm:w-[35vw] lg:w-[25vw] md:grid md:grid-cols-2 md:gap-4'>
 						<Image
-							src='/images/UJK/UJK_ella.jpeg'
+							src='/images/UJK/UJK_ella_scarf.jpg'
 							alt='profile'
 							width={200}
 							height={200}
@@ -185,7 +185,7 @@ const Home = () => {
 						/>
 
 						<Image
-							src='/images/UJK/UJK_kappa.jpeg'
+							src='/images/UJK/UJK_scarf.jpg'
 							alt='profile'
 							width={200}
 							height={200}

@@ -3,56 +3,59 @@
 		"id": 1,
 		"model_name": "Vera",
 		"short_description": "Skön tröja i återvunnen bomull, idealisk för vardagsbruk.",
-		"image": "marimekko.jpg",
+		"image": "ujd/marimekko.jpg",
 		"price": "SEK 350"
 	},
+
 	{
 		"id": 2,
 		"model_name": "Ida",
 		"short_description": "Lätta linnebyxor, perfekta för sommaren, tillverkade i ekologiskt material.",
-		"image": "marimekko.jpg",
+		"image": "misc/clothes_on_rack.jpg",
 		"price": "SEK 450"
 	},
 	{
 		"id": 3,
 		"model_name": "Saga",
 		"short_description": "Avslappnad passform i återanvänd polyester, hållbar design.",
-		"image": "marimekko.jpg",
+		"image": "ujd/red_tulips.jpg",
 		"price": "SEK 500"
 	},
 	{
 		"id": 4,
 		"model_name": "Mia",
 		"short_description": "Stickad tröja i 100% organisk bomull, både mjuk och varm.",
-		"image": "marimekko.jpg",
+		"image": "ujd/colored_circles.jpg",
+
 		"price": "SEK 600"
 	},
 	{
 		"id": 5,
 		"model_name": "Tyra",
 		"short_description": "Denim jeans gjorda av återvunnen denim, klassisk och bekväm.",
-		"image": "red_tulips.jpg",
+		"image": "misc/grey_fabric.jpg",
+
 		"price": "SEK 550"
 	},
 	{
 		"id": 6,
 		"model_name": "Lisa",
 		"short_description": "Elegant silkesklänning, perfekt för speciella tillfällen.",
-		"image": "red_tulips.jpg",
+		"image": "misc/work_day.jpg",
 		"price": "SEK 800"
 	},
 	{
 		"id": 7,
 		"model_name": "Anna",
 		"short_description": "Mysig stickad tröja, tillverkad av ekologisk ull, perfekt för kyliga dagar.",
-		"image": "red_tulips.jpg",
+		"image": "misc/color_fabric.jpg",
 		"price": "SEK 600"
 	},
 	{
 		"id": 8,
 		"model_name": "Emma",
 		"short_description": "Snygga jeans med hög midja, gjorda av återvunnen denim, bekväma och hållbara.",
-		"image": "red_tulips.jpg",
+		"image": "ujd/ulla_summer.jpg",
 		"price": "SEK 700"
 	}
 ]

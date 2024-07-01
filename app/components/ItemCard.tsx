@@ -16,8 +16,9 @@ const ItemCard = ({ item }: ItemProps) => {
 		<section className=' flex flex-col cursor-pointer bg-white mt-2 md:w-[25vw] rounded-md md:mb-3 lg:mb-2 lg:w-[16vw] '>
 			<div className='relative'>
 				<Image
+					// src={`/images/${item.image}`}
 					src={`/images/${item.image}`}
-					alt='Bild av smycke'
+					alt='Ulla Jacobsson Design'
 					width={250}
 					height={200}
 					// className='object-cover h-[30vh] md:w-full sm:h-[40vh] md:h-[40vh]'

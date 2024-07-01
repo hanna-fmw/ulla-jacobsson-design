@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Modal from './components/Modal'
 import SizeChart from './components/SizeChart'
+import ImageGrid from './components/ImageGrid'
 
 type Item = {
 	id: number
@@ -150,7 +151,7 @@ const Home = () => {
 					</div>
 				</section>
 			</section>
-			<section className='mx-auto font-lora mt-6 mb-10 md:mt-16 md:mb-16 lg:mt-20 lg:mb-20 w-[80vw] md:w-[70vw] lg:w-[70vw] md:my-20'>
+			<section className='mx-auto font-lora mt-6 mb-10 md:mt-16 md:mb-16 lg:mt-20 lg:mb-20 w-[80vw] md:w-[70vw] lg:w-[60vw] md:my-20'>
 				<h2 className='font-lora font-medium text-base md:text-xl'>Ulla Jacobsson Kläder</h2>
 
 				<div className='md:grid md:grid-cols-2 md:gap-10 lg:gap-12'>
@@ -162,11 +163,6 @@ const Home = () => {
 							voluptatum. Autem!
 						</p>
 						<section className='font-lora w-full flex items-center mb-4'>
-							{/* <p className='flex items-center gap-3' style={{ transform: 'translateY(25%)' }}> */}
-							{/* <Link href='/' className='hover:font-medium'>
-										www.ullajacobssondesign.se
-									</Link>{' '}
-									<span className='inline-block h-[6px] w-[6px] rounded-full bg-[#333]'></span>{' '} */}
 							<a
 								href='https://ullajacobsson.se/'
 								className='font-lora text-xs sm:text-sm hover:font-medium'>
@@ -193,6 +189,12 @@ const Home = () => {
 						/>
 					</div>
 				</div>
+			</section>
+			<section className='w-screen font-lora min-w-full bg-light-gray pt-6 pb-10 md:pt-8 md:pb-20 mt-6 md:mt-16 lg:mt-20'>
+				<section className='mx-auto w-[80vw] md:w-[60vw]'>
+					<h2 className='font-lora font-medium text-base md:text-xl'>Bilder ur vardagen</h2>
+					<ImageGrid />
+				</section>
 			</section>
 		</main>
 	)

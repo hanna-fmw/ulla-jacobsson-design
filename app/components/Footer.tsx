@@ -48,17 +48,17 @@ const Footer = () => {
 			</section>
 			<section className='mx-auto pb-8 w-[90vw] mt-[1.5rem] gap-6 flex justify-center lg:hidden'>
 				<a
-					href='https://www.facebook.com/designbyam.se/?locale=sv_SE'
-					className='text-[#fff] hover:text-navbar-link-hover-color'>
+					href='https://www.facebook.com/'
+					className='text-[#fff] hover:text-navbar-link-hover-color cursor-not-allowed'>
 					<FaFacebook size={15} fill='#fff' color='#fff' />
 				</a>
 				<a
-					href='https://www.instagram.com/gardsbutiken_stenegard?igsh=MXh2bm1iMm5tMzllOA=='
+					href='https://www.instagram.com/ullajacobssondesign?igsh=ZW02NjhlZHU4d2Ry'
 					className='text-[#fff] hover:text-navbar-link-hover-color'>
 					<FaInstagram size={15} fill='#fff' color='#fff' />
 				</a>
 				<a
-					href='mailto:info@amdesign.se'
+					href='mailto:ulla@ullajacobssondesign.se'
 					className='text-[#fff] hover:text-navbar-link-hover-color'>
 					<IoMail size={15} fill='#fff' color='#fff' />
 				</a>

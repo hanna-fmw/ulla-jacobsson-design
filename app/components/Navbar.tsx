@@ -16,17 +16,17 @@ const Navbar = () => {
 					<div>
 						<nav className='flex gap-6 items-center'>
 							<a
-								href='https://www.facebook.com/designbyam.se/?locale=sv_SE'
-								className='text-navbar-link-color hover:text-navbar-link-hover-color'>
+								href='https://www.facebook.com/'
+								className='text-navbar-link-color hover:text-navbar-link-hover-color cursor-not-allowed'>
 								<LiaFacebook size={20} fill='#000' color='#000' />
 							</a>
 							<a
-								href='https://www.instagram.com/gardsbutiken_stenegard?igsh=MXh2bm1iMm5tMzllOA=='
+								href='https://www.instagram.com/ullajacobssondesign?igsh=ZW02NjhlZHU4d2Ry'
 								className='text-navbar-link-color hover:text-navbar-link-hover-color'>
 								<FaInstagram size={15} fill='#000' color='#000' />
 							</a>
 							<a
-								href='mailto:info@amdesign.se'
+								href='mailto:ulla@ullajacobssondesign.se'
 								className='text-navbar-link-color hover:text-navbar-link-hover-color'>
 								<IoMailOutline size={18} fill='#000' color='#000' />
 							</a>

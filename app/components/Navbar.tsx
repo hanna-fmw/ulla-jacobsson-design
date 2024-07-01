@@ -1,30 +1,40 @@
-import Link from 'next/link'
 import React from 'react'
-import { CiFacebook } from 'react-icons/ci'
-import { CiInstagram } from 'react-icons/ci'
-import { CiMail } from 'react-icons/ci'
+import { LiaFacebook } from 'react-icons/lia'
+import { FaInstagram } from 'react-icons/fa'
+import { IoMailOutline } from 'react-icons/io5'
 
 const Navbar = () => {
 	return (
-		<div className='py-8 mx-auto flex justify-between items-center w-[90vw] md:py-6 md:px-4 lg:w-screen lg:px-32'>
-			<div className='hidden sm:visible'></div>
-			<p className='font-inter text-[0.6rem] sm:text-xs md:font-normal uppercase tracking-[1px]'>
-				Ulla Jacobsson Design
-			</p>
-			<nav className='flex gap-6 items-center translate-y-[-25%]'>
-				<Link href='/'>
-					<CiFacebook className='w-4 h-4 md:w-5 md:h-5' />
-				</Link>
-				<Link href='/' className='text-navbar-link-color hover:text-light-gray hover:font-bold'>
-					<CiInstagram className='w-4 h-4 md:w-5 md:h-5' />
-				</Link>
-				<Link
-					href='mailto:ulla@ullajacobssondesign.se'
-					className='text-navbar-link-color hover:text-light-gray hover:font-bold'>
-					<CiMail className='w-4 h-4 md:w-5 md:h-5' />
-				</Link>
-			</nav>
-		</div>
+		<>
+			<section>
+				<div className='p-4 text-center uppercase font-inter text-white bg-[#232323] text-[0.6rem] sm:text-xs md:font-normal tracking-[1px]'>
+					Hållbart mode för alla tillfällen
+				</div>
+				<div className='py-4 mx-auto flex justify-between items-center w-[90vw] md:py-6 md:px-4 lg:w-screen lg:px-32'>
+					<div className='hidden md:block'></div>
+
+					<div>
+						<nav className='flex gap-6 items-center'>
+							<a
+								href='https://www.facebook.com/designbyam.se/?locale=sv_SE'
+								className='text-navbar-link-color hover:text-navbar-link-hover-color'>
+								<LiaFacebook size={20} fill='#000' color='#000' />
+							</a>
+							<a
+								href='https://www.instagram.com/gardsbutiken_stenegard?igsh=MXh2bm1iMm5tMzllOA=='
+								className='text-navbar-link-color hover:text-navbar-link-hover-color'>
+								<FaInstagram size={15} fill='#000' color='#000' />
+							</a>
+							<a
+								href='mailto:info@amdesign.se'
+								className='text-navbar-link-color hover:text-navbar-link-hover-color'>
+								<IoMailOutline size={18} fill='#000' color='#000' />
+							</a>
+						</nav>
+					</div>
+				</div>
+			</section>
+		</>
 	)
 }
 

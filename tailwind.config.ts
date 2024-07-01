@@ -10,8 +10,9 @@ const config: Config = {
 		extend: {
 			colors: {
 				'accent-pink': '#C47C90',
-				'navbar-link-color': '#e5e5e5',
+				'accent-pink-vivid': '#E75480',				
 				'light-gray': '#f5f5f5',
+				'medium-gray': '#e5e5e5',
 			},
 			backgroundImage: {
 				'hero-bg': "url('../public/images/rosa-hero.png')",

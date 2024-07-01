@@ -22,7 +22,7 @@ const leage_spartan = League_Spartan({
 
 export const metadata: Metadata = {
 	title: 'Ulla Jacobsson Design',
-	description: 'Kläder och design i vackra tyger från Järvsö i Hälsinglands hjärta',
+	description: 'Kläder och hållbar design i vackra tyger från Järvsö i Hälsinglands hjärta',
 }
 
 export default function RootLayout({
